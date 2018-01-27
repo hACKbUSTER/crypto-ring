@@ -1,191 +1,230 @@
 /* PAGE */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body,
 .pure-g [class*=pure-u] {
-  font-family: 'Noto Serif', sans-serif;
+    font-family: 'Noto Serif', sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: 'Noto Serif', 'Arial Narrow', sans-serif;
-  font-weight: bolder;
-  text-transform: uppercase;
+    font-family: 'Noto Serif', 'Arial Narrow', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 code, pre {
-  font-family: 'Courier', monospace;
+    font-family: 'Courier', monospace;
 }
 
 header {
-  text-align: center;
-  background: #FAF8F7;
+    text-align: center;
+    background: #FAF8F7;
 }
 
 .with-border {
-  border-bottom: 1px solid rgba(151,151,151,0.29);
+    border-bottom: 1px solid rgba(151, 151, 151, 0.29);
 }
 
 header .title {
-  width: 960px;
-  margin: 0 auto;
-  padding-top: 32px;
-  padding-bottom: 16px;
-  font-size: 46px;
-  font-weight: lighter;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    font-size: 46px;
+    font-weight: lighter;
 }
 
 header .menu {
-  width: 100%;
+    width: 100%;
 }
 
 header .menu ul {
-  width: 300px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header .menu ul li {
-  display: flex-item;
-  padding: 16px 0;
-  text-transform: uppercase;
+    display: flex-item;
+    padding: 16px 0;
+    text-transform: uppercase;
 }
 
 header .menu a {
-  color: #818181;
-  font-size: 16px;
+    color: #818181;
+    font-size: 16px;
 }
 
 header .menu .active a {
-  color: black;
+    color: black;
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
+    width: 960px;
+    margin: 0 auto;
 }
 
 section h2 {
-  font-size: 32px;
-  margin: 32px 0;
+    font-size: 32px;
+    margin: 32px 0;
 }
 
 .avatar-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .avatar {
-  width: 80px;
-  height: 80px;
-  margin: 0 20px;
+    width: 80px;
+    height: 80px;
+    margin: 0 20px;
 }
 
 .avatar img {
-  width: 100%;
+    width: 100%;
 }
 
 .highlight {
-  color: black;
-  width: 100%;
-  padding: 0 8px;
-  font-size: 22px;
-  line-height: 1.4;
-  background: #FFFCF2;
+    color: black;
+    width: 100%;
+    padding: 0 8px;
+    font-size: 22px;
+    line-height: 1.4;
+    background: #FFFCF2;
 }
 
 .ring-intro-section p {
-  font-size: 16px;
-  line-height: 1.4;
-  text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
 }
 
 .button-row {
-  margin-top: 32px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .button-row .separator {
-  height: 80px;
-  margin: 0 25px;
-  display: flex;
-  position: relative;
-  text-align: center;
-  align-items: center;
+    height: 80px;
+    margin: 0 25px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
 }
 
 .button-row .separator span {
-  background: white;
-  font-size: 20px;
-  text-align: center;
-  line-height: 1.4;
-  display: block;
+    background: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.4;
+    display: block;
 }
 
 .button-row .separator:before {
-  position: absolute;
-  left: 46%;
-  width: 1px;
-  height: 100%;
-  z-index: -1;
-  content: '';
-  background: #C6C6C6;
-  transform: translateX(50%);
+    position: absolute;
+    left: 46%;
+    width: 1px;
+    height: 100%;
+    z-index: -1;
+    content: '';
+    background: #C6C6C6;
+    transform: translateX(50%);
 }
 
 .btn {
-  width: 260px;
-  display: block;
-  color: black;
-  border: 3px solid black;
-  font-size: 21px;
-  text-align: center;
-  line-height: 2.2;
+    width: 260px;
+    display: block;
+    color: black;
+    border: 3px solid black;
+    font-size: 21px;
+    text-align: center;
+    line-height: 2.2;
 }
 
 .btn:hover {
-  color: white;
-  background: black;
+    color: white;
+    background: black;
 }
 
 .ring-row {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .ring-row img {
-  width: 350px;
-  margin-right: 32px;
+    width: 350px;
+    margin-right: 32px;
 }
 
 .ring-row h3 {
-  font-size: 36px;
-  font-weight: bolder;
+    font-size: 36px;
+    font-weight: bolder;
 }
 
 .ring-row p {
-  font-size: 20px;
-  line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .ring-row .btn {
-  margin-top: 16px;
+    margin-top: 16px;
+}
+
+.wsh-header {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.wsh-avatar-row {
+    margin-top: 20px;
+}
+
+.wsh-tr {
+    display:block;
+    margin-bottom:20px
+}
+
+.wsh-tr td {
+    width: 25%;
+}
+
+.wsh-td-img {
+    width: 60%;
+}
+
+.wsh-span {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.wsh-title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 30px
+}
+
+.wsh-div-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-bottom: 80px;
 }
