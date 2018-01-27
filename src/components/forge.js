@@ -5,7 +5,7 @@ class Forge extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      materials: [],
+      materials: [0],
       forger: 0,
       id: Date.now(),
       price: Math.ceil(Math.random() * 10000) / 10000,
