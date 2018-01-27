@@ -123,16 +123,6 @@ section h2 {
   justify-content: center;
 }
 
-.button-row a {
-  width: 260px;
-  display: block;
-  color: black;
-  border: 3px solid;
-  font-size: 21px;
-  text-align: center;
-  line-height: 2.2;
-}
-
 .button-row .separator {
   height: 80px;
   margin: 0 25px;
@@ -159,4 +149,43 @@ section h2 {
   content: '';
   background: #C6C6C6;
   transform: translateX(50%);
+}
+
+.btn {
+  width: 260px;
+  display: block;
+  color: black;
+  border: 3px solid black;
+  font-size: 21px;
+  text-align: center;
+  line-height: 2.2;
+}
+
+.btn:hover {
+  color: white;
+  background: black;
+}
+
+.ring-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.ring-row img {
+  width: 350px;
+  margin-right: 32px;
+}
+
+.ring-row h3 {
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.ring-row p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.ring-row .btn {
+  margin-top: 16px;
 }

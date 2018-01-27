@@ -30,7 +30,7 @@ class App extends Component {
               <Route path="/mine" component={Mine} />
               <Route path="/find" component={Find} />
               <Route path="/forge" component={Forge} />
-              <Route path="/market" component={Market} />
+              <Route path="/market/:tab" component={Market} />
               <Route path="/sale/:id" component={Sale} />
               <Route path="/witness/:id" component={Witness} />
               <Route path="/" exact component={Home} />
