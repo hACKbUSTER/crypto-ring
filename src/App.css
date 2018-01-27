@@ -73,3 +73,90 @@ header .menu a {
 header .menu .active a {
   color: black;
 }
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 32px;
+  margin: 32px 0;
+}
+
+.avatar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 20px;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.highlight {
+  color: black;
+  width: 100%;
+  padding: 0 8px;
+  font-size: 22px;
+  line-height: 1.4;
+  background: #FFFCF2;
+}
+
+.ring-intro-section p {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.button-row {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-row a {
+  width: 260px;
+  display: block;
+  color: black;
+  border: 3px solid;
+  font-size: 21px;
+  text-align: center;
+  line-height: 2.2;
+}
+
+.button-row .separator {
+  height: 80px;
+  margin: 0 25px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+
+.button-row .separator span {
+  background: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.4;
+  display: block;
+}
+
+.button-row .separator:before {
+  position: absolute;
+  left: 46%;
+  width: 1px;
+  height: 100%;
+  z-index: -1;
+  content: '';
+  background: #C6C6C6;
+  transform: translateX(50%);
+}
