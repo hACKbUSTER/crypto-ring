@@ -160,3 +160,68 @@ section h2 {
   background: #C6C6C6;
   transform: translateX(50%);
 }
+
+.popup-header {
+}
+
+.popup-header h2 {
+  width: 70%;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.popup-field {
+  min-height: 40px;
+}
+
+.popup-field label {
+  display: inline-block;
+  min-width: 100px;
+  min-height: 35px;
+  font-size: 18px;
+}
+
+.popup-field p {
+  min-width: 100px;
+  min-height: 35px;
+  font-size: 18px;
+}
+
+.popup-field input {
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: ridge;
+  outline: none;
+  margin-left: 10px;
+}
+
+.popup-field textarea {
+  margin-bottom: 10px;
+  height: 300px;
+  border-style: ridge;
+  outline: none;
+}
+
+.popup-button-row {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.popup-button-row .button-popup {
+  width: 160px;
+  display: block;
+  color: black;
+  border: 3px solid;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+  line-height: 2.2;
+}

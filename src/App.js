@@ -17,6 +17,7 @@ import Forge from './components/forge'
 import Market from './components/market'
 import Header from './components/header'
 import Witness from './components/witness'
+import Send from './components/send'
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
             <main className="container">
               <Route path="/mine" component={Mine} />
               <Route path="/find" component={Find} />
+              <Route path="/send" component={Send} />
               <Route path="/forge" component={Forge} />
               <Route path="/market" component={Market} />
               <Route path="/sale/:id" component={Sale} />
