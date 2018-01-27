@@ -28,7 +28,6 @@ class App extends Component {
           <Switch>
             <main className="container">
               <Route path="/mine" component={Mine} />
-              <Route path="/find" component={Find} />
               <Route path="/forge" component={Forge} />
               <Route path="/market/:tab" component={Market} />
               <Route path="/sale/:id" component={Sale} />
