@@ -15,6 +15,7 @@ import Home from './components/home'
 import Sale from './components/sale'
 import Forge from './components/forge'
 import Market from './components/market'
+import Header from './components/header'
 import Witness from './components/witness'
 
 class App extends Component {
@@ -23,14 +24,17 @@ class App extends Component {
     return (
       <Router history={history}>
         <div className="App">
+          <Header history={history} />
           <Switch>
-            <Route path="/mine" component={Mine} />
-            <Route path="/find" component={Find} />
-            <Route path="/forge" component={Forge} />
-            <Route path="/market" component={Market} />
-            <Route path="/sale/:id" component={Sale} />
-            <Route path="/witness/:id" component={Witness} />
-            <Route path="/" component={Home} />
+            <main className="container">
+              <Route path="/mine" component={Mine} />
+              <Route path="/find" component={Find} />
+              <Route path="/forge" component={Forge} />
+              <Route path="/market" component={Market} />
+              <Route path="/sale/:id" component={Sale} />
+              <Route path="/witness/:id" component={Witness} />
+              <Route path="/" exact component={Home} />
+            </main>
           </Switch>
         </div>
       </Router>
