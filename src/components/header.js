@@ -21,9 +21,9 @@ export default function(props) {
       <a href='/'><h1 className="title with-border">crypto ring</h1></a>
       <nav className="menu">
         <ul>
-          {routes.map(r => {
+          {routes.map((r, i) => {
             const className = r.path === props.history.location.pathname ? 'active' : '';
-            return <li className={className}><a href={r.path}>{r.name}</a></li>;
+            return <li key={i} className={className}><a href={r.path}>{r.name}</a></li>;
           })}
         </ul>
       </nav>

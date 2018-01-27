@@ -158,6 +158,7 @@ section h2 {
   color: black;
   border: 3px solid black;
   font-size: 21px;
+  font-style: italic;
   text-align: center;
   line-height: 2.2;
 }
@@ -250,4 +251,34 @@ section h2 {
 .home-subpics {
   display: inline-block;
   margin: 20px;
+}
+
+.padded-section {
+  padding-bottom: 32px;
+}
+
+.form label {
+  display: block;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.form-input {
+  padding-bottom: 32px;
+}
+
+.pure-checkbox, .pure-radio {
+  padding: 8px;
+}
+
+.summary {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary .price {
+  font-weight: bolder;
 }
