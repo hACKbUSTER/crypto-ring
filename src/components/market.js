@@ -10,7 +10,7 @@ export default function (props) {
   }
   return (
     <div class="wsh-container">
-      <section>
+      <section className="with-border padded-section">
         <h3 className="wsh-header">your address</h3>
         <div className="avatar-row wsh-avatar-row">
           <div className="avatar">

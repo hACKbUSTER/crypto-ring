@@ -19,7 +19,7 @@ class Sale extends Component {
     const btn = <button className="btn">Buy</button>
     return (
       <div>
-        <section>
+        <section className="with-border padded-section">
           <h2>your address</h2>
           <div className="avatar-row">
             <div className="avatar">
