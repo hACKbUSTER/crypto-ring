@@ -26,8 +26,8 @@ class App extends Component {
       <Router history={history}>
         <div className="App">
           <Header history={history} />
-          <Switch>
-            <main className="container">
+          <main className="container">
+            <Switch>
               <Route path="/mine" component={Mine} />
               <Route path="/send" component={Send} />
               <Route path="/payment" component={Payment} />
@@ -36,8 +36,8 @@ class App extends Component {
               <Route path="/sale/:id" component={Sale} />
               <Route path="/witness/:id" component={Witness} />
               <Route path="/" exact component={Home} />
-            </main>
-          </Switch>
+            </Switch>
+          </main>
         </div>
       </Router>
     );

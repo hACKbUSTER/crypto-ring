@@ -250,6 +250,8 @@ section h2 {
 
 .btn[disabled] {
   opacity: 0.7;
+  color: white;
+  background: black;
 }
 
 .ring-row {
@@ -264,6 +266,36 @@ section h2 {
 
 .ring-row .ring-info {
   margin-left: 200px;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay:before {
+  content: '';
+  opacity: 0.7;
+  background: #FFF9EA;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  position: absolute;
+}
+
+.popup-form {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  position: absolute;
+  width: 900px;
+  padding: 30px;
+  background: white;
 }
 
 .ring-row h3 {
