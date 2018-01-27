@@ -16,6 +16,7 @@ class Sale extends Component {
 
   render() {
     // TODO: buy button onclick should go to payment page
+    const btn = <button className="btn">Buy</button>
     return (
       <div>
         <section>
@@ -29,8 +30,7 @@ class Sale extends Component {
         </section>
         <section>
           <h2>my ring</h2>
-          <Ring ring={this.state.ring} useButton={false} />
-          <button className="btn">Buy</button>
+          <Ring ring={this.state.ring} useButton={false} children={btn} />
         </section>
       </div>
     )

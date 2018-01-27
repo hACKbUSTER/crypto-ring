@@ -35,6 +35,7 @@ export default function(props) {
         {toAddr && <p>To: {toAddr}</p>}
         {note && <p>Note: {note}</p>}
         {props.useButton && buttons}
+        {props.children}
       </div>
     </div>
   )
