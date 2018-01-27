@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import { RING, MATERIAL, TRANSACTION_TYPE, FORGER } from '../store/constants'
+import { RING, MATERIAL, FORGER } from '../store/constants'
 import imgRing from '../img/ring.png'
 
 class Mine extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      hasRing: false,
+      hasRing: true,
       ring: RING,
     };
   }
@@ -16,7 +16,21 @@ class Mine extends Component {
   }
 
   renderRingInfo() {
-    const { id, price, timestamp, materials, forger, transaction_type, rarity, reforge_count, note, from, to } = this.state.ring;
+    const { id, price, timestamp, materials, forger, transaction_type: currentType, rarity, reforge_count, note, from: fromAddr, to: toAddr } = this.state.ring;
+    let buttons;
+    if (currentType === 0) {
+      // TODO: onclick reforge
+      // TODO: onclick give modal
+      buttons = (<div>
+        <button className="btn">Re-forge ({reforge_count}/5)</button>
+        <button className="btn">Give it to the one</button>
+      </div>)
+    } else if (currentType === 1) {
+      buttons = (<div>
+        <button className="btn" disabled>Waiting for confirmation</button>
+      </div>)
+    }
+
     return (
       <section>
         <h2>my ring</h2>
@@ -31,8 +45,10 @@ class Mine extends Component {
             <p>Class: {FORGER[forger]}</p>
             <p>Creation Date: {(new Date(timestamp)).toLocaleString()}</p>
             <p>Rarity: {rarity}</p>
-            <button className="btn">Re-forge ({reforge_count}/5)</button>
-            <button className="btn">Give it to the one</button>
+            {fromAddr && <p>From: {fromAddr}</p>}
+            {toAddr && <p>To: {toAddr}</p>}
+            {note && <p>Note: {note}</p>}
+            {buttons}
           </div>
         </div>
       </section>

@@ -173,7 +173,10 @@ section h2 {
 
 .ring-row img {
   width: 350px;
-  margin-right: 32px;
+}
+
+.ring-row .ring-info {
+  margin-left: 64px;
 }
 
 .ring-row h3 {
