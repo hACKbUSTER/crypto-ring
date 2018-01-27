@@ -14,7 +14,7 @@ export const RING = {
   ],
   forger: 0,
   transaction_type: 2,
-  rarity: 'high',
+  rarity: 'High',
   reforge_count: 0,
   note: 'with love from Russia',
   from: 'The One',

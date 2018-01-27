@@ -39,12 +39,22 @@ header {
 }
 
 header .title {
+<<<<<<< HEAD
     width: 960px;
     margin: 0 auto;
     padding-top: 32px;
     padding-bottom: 16px;
     font-size: 46px;
     font-weight: lighter;
+=======
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  font-size: 46px;
+  font-weight: lighter;
+  color:black;
+>>>>>>> aa4b2ab1e059d05af5fb9f34e1645b128027abe8
 }
 
 header .menu {
@@ -152,6 +162,7 @@ section h2 {
 }
 
 .btn {
+<<<<<<< HEAD
     width: 260px;
     display: block;
     color: black;
@@ -159,11 +170,25 @@ section h2 {
     font-size: 21px;
     text-align: center;
     line-height: 2.2;
+=======
+  width: 260px;
+  display: block;
+  color: black;
+  border: 3px solid black;
+  font-size: 21px;
+  font-style: italic;
+  text-align: center;
+  line-height: 2.2;
+>>>>>>> aa4b2ab1e059d05af5fb9f34e1645b128027abe8
 }
 
 .btn:hover {
     color: white;
     background: black;
+}
+
+.btn[disabled] {
+  opacity: 0.7;
 }
 
 .ring-row {
@@ -172,8 +197,16 @@ section h2 {
 }
 
 .ring-row img {
+<<<<<<< HEAD
     width: 350px;
     margin-right: 32px;
+=======
+  width: 350px;
+}
+
+.ring-row .ring-info {
+  margin-left: 200px;
+>>>>>>> aa4b2ab1e059d05af5fb9f34e1645b128027abe8
 }
 
 .ring-row h3 {
@@ -190,6 +223,7 @@ section h2 {
     margin-top: 16px;
 }
 
+<<<<<<< HEAD
 .wsh-header {
     margin-top: 20px;
     font-size: 30px;
@@ -228,3 +262,88 @@ section h2 {
     font-size: 18px;
     margin-bottom: 80px;
 }
+=======
+.home-background {
+  height:500px;
+  width: 100vw;
+  margin-left: -25%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc200+15,ffffff+100&0+0,1+100 */
+  background: -moz-linear-gradient(45deg, rgba(255,194,0,0) 0%, rgba(255,194,0,0.15) 15%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(255,194,0,0) 0%,rgba(255,194,0,0.15) 15%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(255,194,0,0) 0%,rgba(255,194,0,0.15) 15%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.home-pic {
+  height:500px;
+  width: 100vw;
+  margin-left: -25%;
+  position: relative;
+}
+
+.home-title {
+    font-weight: 100;
+    width: 35%;
+    font-size: 35px;
+    left: 15%;
+    z-index: 9999999;
+    margin-top: -350px;
+    position: absolute;
+}
+
+.home-button {
+    left: 20%;
+    z-index: 9999999;
+    margin-top: -180px;
+    position: absolute;
+}
+
+.home-subtitle {
+    font-weight: 100;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.home-text {
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 50px;
+  word-spacing: 5px;
+  color: darkslategrey;
+}
+
+.home-subpics {
+  display: inline-block;
+  margin: 20px;
+}
+
+.padded-section {
+  padding-bottom: 32px;
+}
+
+.form label {
+  display: block;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.form-input {
+  padding-bottom: 32px;
+}
+
+.pure-checkbox, .pure-radio {
+  padding: 8px;
+}
+
+.summary {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary .price {
+  font-weight: bolder;
+}
+>>>>>>> aa4b2ab1e059d05af5fb9f34e1645b128027abe8
