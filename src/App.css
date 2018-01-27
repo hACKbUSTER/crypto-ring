@@ -196,3 +196,57 @@ section h2 {
 .ring-row .btn {
   margin-top: 16px;
 }
+
+.home-background {
+  height:500px;
+  width: 100vw;
+  margin-left: -25%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc200+15,ffffff+100&0+0,1+100 */
+  background: -moz-linear-gradient(45deg, rgba(255,194,0,0) 0%, rgba(255,194,0,0.15) 15%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(255,194,0,0) 0%,rgba(255,194,0,0.15) 15%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(255,194,0,0) 0%,rgba(255,194,0,0.15) 15%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.home-pic {
+  height:500px;
+  width: 100vw;
+  margin-left: -25%;
+  position: relative;
+}
+
+.home-title {
+    font-weight: 100;
+    width: 35%;
+    font-size: 35px;
+    left: 15%;
+    z-index: 9999999;
+    margin-top: -350px;
+    position: absolute;
+}
+
+.home-button {
+    left: 20%;
+    z-index: 9999999;
+    margin-top: -180px;
+    position: absolute;
+}
+
+.home-subtitle {
+    font-weight: 100;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.home-text {
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 50px;
+  word-spacing: 5px;
+  color: darkslategrey;
+}
+
+.home-subpics {
+  display: inline-block;
+  margin: 20px;
+}
