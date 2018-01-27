@@ -11,7 +11,7 @@ export default function(props) {
       name: 'artisan',
     },
     {
-      path: '/market',
+      path: '/market/sale',
       name: 'marketplace',
     }
   ];
