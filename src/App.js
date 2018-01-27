@@ -10,7 +10,6 @@ import './css/noto-serif.css'
 import './css/pure-min.css'
 import './App.css'
 import Mine from './components/mine'
-import Find from './components/find'
 import Home from './components/home'
 import Sale from './components/sale'
 import Forge from './components/forge'
@@ -29,10 +28,9 @@ class App extends Component {
           <Switch>
             <main className="container">
               <Route path="/mine" component={Mine} />
-              <Route path="/find" component={Find} />
               <Route path="/send" component={Send} />
               <Route path="/forge" component={Forge} />
-              <Route path="/market" component={Market} />
+              <Route path="/market/:tab" component={Market} />
               <Route path="/sale/:id" component={Sale} />
               <Route path="/witness/:id" component={Witness} />
               <Route path="/" exact component={Home} />
