@@ -16,17 +16,15 @@ import Forge from './components/forge'
 import Market from './components/market'
 import Header from './components/header'
 import Witness from './components/witness'
-import getWeb3 from './utils/getWeb3'
-import Web3 from 'web3'
+import web3js from './web3';
 import Send from './components/send'
 import Payment from './components/payment'
 
 class App extends Component {
   render() {
     const history = createBrowserHistory()
-    var provider = new Web3.providers.HttpProvider('http://127.0.0.1:8545')
-    var web3 = new Web3(provider)
-    web3.eth.defaultAccount = web3.eth.accounts[0]
+
+    web3js.eth.defaultAccount = web3js.eth.accounts[0]
 
     return (
       <Router history={history}>

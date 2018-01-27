@@ -1,4 +1,5 @@
 import React from 'react'
+import web3js from '../web3'
 
 export default function(props) {
   return (
@@ -11,7 +12,7 @@ export default function(props) {
         <form>
           <div className="popup-field">
             <label>Send from:</label>
-            <pre className="address popup-highlight">0x00435452354265345432</pre>
+            <pre className="address popup-highlight">{web3js.eth.defaultAccount}</pre>
           </div>
           <div className="popup-field">
             <label>To:</label>

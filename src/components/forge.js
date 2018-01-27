@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { MATERIAL, FORGER } from '../store/constants'
 import Payment from './payment'
+import web3js from '../web3'
 
 class Forge extends Component {
   constructor(props) {
@@ -18,8 +19,23 @@ class Forge extends Component {
       from: '',
       to: '',
       showModal: false,
+      balance: 0,
+      network: 0,
     };
   }
+
+  componentDidMount() {
+    web3js.eth.defaultAccount = web3js.eth.accounts[0];
+    this.syncEthInfo();
+    // TODO: setTimeout to check if watch succeed
+    // If not, prompt user to reopen browser
+    web3js.eth.filter('latest').watch(this.syncEthInfo);
+  }
+  
+  syncEthInfo = () => {
+    web3js.eth.getBalance(web3js.eth.coinbase, (e, balance) => this.setState({ balance }));
+    web3js.version.getNetwork((e, network) => this.setState({ network }));
+  };
 
   confirmPay() {
     this.toggleModal()
@@ -64,7 +80,8 @@ class Forge extends Component {
             <div className="avatar">
               <img alt="avatar" src="https://s3.amazonaws.com/cdn-live.sketch.cloud/default_avatars/m/2.png" />
             </div>
-            <pre className="address highlight">0x00435452354265345432</pre>
+            <pre className="address highlight">{web3js.eth.defaultAccount}</pre>
+            <h2>You've got {web3js.fromWei(this.state.balance, 'ether').toString()} ETH</h2>
           </div>
         </section>
         <section className="form with-border padded-section">

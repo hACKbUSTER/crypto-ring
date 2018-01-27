@@ -1,3 +1,4 @@
+
 pragma solidity ^0.4.18;
 
 // Auction wrapper functions

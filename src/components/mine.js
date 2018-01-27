@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Ring from './ring'
 import { RING } from '../store/constants'
-import Web3 from 'web3'
+import web3js from '../web3'
 
 class Mine extends Component {
   constructor(props) {
@@ -43,9 +43,6 @@ class Mine extends Component {
   }
 
   render() {
-    var provider = new Web3.providers.HttpProvider('http://127.0.0.1:8545')
-    var web3 = new Web3(provider)
-    web3.eth.defaultAccount = web3.eth.accounts[0]
 
     return (
           <div>
@@ -55,7 +52,7 @@ class Mine extends Component {
                 <div className="avatar">
                   <img alt="avatar" src="https://s3.amazonaws.com/cdn-live.sketch.cloud/default_avatars/m/2.png" />
                 </div>
-                <pre className="address highlight">{web3.eth.defaultAccount}</pre>
+                <pre className="address highlight">{web3js.eth.defaultAccount}</pre>
               </div>
             </section>
             {this.state.hasRing ? this.renderRingInfo() : this.renderNoRing()}
