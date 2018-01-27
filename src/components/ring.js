@@ -29,6 +29,7 @@ export default function(props) {
         <p>Material: {materials.map(m => `${m.madeup * 100}% ${MATERIAL[m.material]}`).join(', ')}</p>
         <p>Class: {FORGER[forger]}</p>
         <p>Creation Date: {(new Date(timestamp)).toLocaleString()}</p>
+        <p>Creation Block Height: 645, 342</p>
         <p>Rarity: {rarity}</p>
         {fromAddr && <p>From: {fromAddr}</p>}
         {toAddr && <p>To: {toAddr}</p>}

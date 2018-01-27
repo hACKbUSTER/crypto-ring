@@ -45,6 +45,7 @@ header .title {
   padding-bottom: 16px;
   font-size: 46px;
   font-weight: lighter;
+  color:black;
 }
 
 header .menu {
@@ -180,7 +181,7 @@ section h2 {
 }
 
 .ring-row .ring-info {
-  margin-left: 64px;
+  margin-left: 200px;
 }
 
 .ring-row h3 {
