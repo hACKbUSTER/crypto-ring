@@ -2,11 +2,12 @@
 
 body,
 .pure-g [class*=pure-u] {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Serif', sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: 'Oswald', 'Arial Narrow', sans-serif;
+  font-family: 'Noto Serif', 'Arial Narrow', sans-serif;
+  font-weight: bolder;
 }
 
 code {
@@ -14,6 +15,10 @@ code {
   margin: 20px 0 15px 0;
   padding: 10px;
   background: #eee;
+}
+
+code, pre {
+  font-family: 'Courier', monospace;
 }
 
 .container {
@@ -40,7 +45,7 @@ code {
   position: fixed;
   padding: 5px;
   background: #0c1a2b;
-  font-family: 'Oswald', 'Arial Narrow', sans-serif;
+  font-family: 'Noto Serif', 'Arial Narrow', sans-serif;
 }
 
 .navbar a {

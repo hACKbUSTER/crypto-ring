@@ -6,8 +6,7 @@ import {
   Switch,
 } from 'react-router-dom'
 
-import './css/oswald.css'
-import './css/open-sans.css'
+import './css/noto-serif.css'
 import './css/pure-min.css'
 import './App.css'
 import Mine from './components/mine'

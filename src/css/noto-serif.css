@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Noto Serif';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Noto Serif'),
+       local('Noto-Serif'),
+       url('../fonts/Noto-Serif/NotoSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+  font-weight: 700;
+  font-style: bolder;
+  src: local('Noto Serif'),
+       local('Noto-Serif'),
+       url('../fonts/Noto-Serif/NotoSerif-Bold.ttf') format('truetype');
+}
