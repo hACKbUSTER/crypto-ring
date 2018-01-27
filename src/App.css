@@ -110,6 +110,15 @@ section h2 {
   background: #FFFCF2;
 }
 
+.popup-highlight {
+  color: black;
+  width: 100%;
+  padding: 0 8px;
+  font-size: 22px;
+  line-height: 1.4;
+  background: #FFFCF2;
+}
+
 .ring-intro-section p {
   font-size: 16px;
   line-height: 1.4;
@@ -163,6 +172,9 @@ section h2 {
 
 .popup-field {
   min-height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .popup-field label {
@@ -200,6 +212,12 @@ section h2 {
   align-items: center;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.popup-button-row p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 50px;
 }
 
 .popup-button-row .button-popup {
