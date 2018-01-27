@@ -16,13 +16,10 @@ import Forge from './components/forge'
 import Market from './components/market'
 import Header from './components/header'
 import Witness from './components/witness'
-<<<<<<< HEAD
 import getWeb3 from './utils/getWeb3'
 import Web3 from 'web3'
-=======
 import Send from './components/send'
 import Payment from './components/payment'
->>>>>>> origin/master
 
 class App extends Component {
   render() {
