@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { MATERIAL, FORGER } from '../store/constants'
+import Payment from './payment'
 
 class Forge extends Component {
   constructor(props) {
@@ -16,11 +17,12 @@ class Forge extends Component {
       note: '',
       from: '',
       to: '',
+      showModal: false,
     };
   }
 
   confirmPay() {
-    // TODO: bring up overlay
+    this.toggleModal()
   }
 
   updateForger = (forger) => {
@@ -42,8 +44,18 @@ class Forge extends Component {
     }
   }
 
+  toggleModal = () => {
+    this.setState({
+      showModal: !this.state.showModal,
+    })
+  }
+
   render() {
     const { materials, forger, price } = this.state;
+    const paymentProps = {
+      price,
+      onSubmit: this.toggleModal,
+    };
     return (
       <div>
         <section className="with-border padded-section">
@@ -102,8 +114,11 @@ class Forge extends Component {
         </section>
         <section className="summary">
           <p className="price">Price: {price} ETH</p>
-          <button className="btn" onClick={this.confirmPay}>Confirm</button>
+          <button className="btn" onClick={this.toggleModal}>Confirm</button>
         </section>
+        {this.state.showModal && <div className="overlay">
+          <Payment {...paymentProps} />
+        </div>}
       </div>
     )
   }

@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function(props) {
   return (
-    <div>
+    <div className="popup-form">
+      <dev className="close-btn" onClick={props.onSubmit}>X</dev>
       <section className="popup-header">
         <h2 className="popup-title with-border">forge payment</h2>
       </section>
@@ -17,8 +18,8 @@ export default function(props) {
             <pre className="address popup-highlight">0x00435452354265345432</pre>
           </div>
           <div className="popup-button-row">
-            <p>Amount: 0.356 ETH</p>
-            <a className="button-popup" href="#">Confirm</a>
+            <p>Amount: {props.price} ETH</p>
+            <a className="button-popup" onClick={props.onSubmit}>Confirm</a>
           </div>
         </form>
       </section>

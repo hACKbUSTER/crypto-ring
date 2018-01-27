@@ -289,8 +289,9 @@ section h2 {
 }
 
 .popup-form {
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
   z-index: 20;
   position: absolute;
   width: 900px;
