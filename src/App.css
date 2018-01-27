@@ -13,7 +13,7 @@ body,
 
 h1, h2, h3 {
   font-family: 'Noto Serif', 'Arial Narrow', sans-serif;
-  font-weight: bolder;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -35,7 +35,7 @@ header {
 }
 
 .with-border {
-  border-bottom: 1px solid rgba(151,151,151,0.29);
+  border-bottom: 1px solid rgba(151, 151, 151, 0.29);
 }
 
 header .title {
@@ -110,6 +110,15 @@ section h2 {
   background: #FFFCF2;
 }
 
+.popup-highlight {
+  color: black;
+  width: 100%;
+  padding: 0 8px;
+  font-size: 22px;
+  line-height: 1.4;
+  background: #FFFCF2;
+}
+
 .ring-intro-section p {
   font-size: 16px;
   line-height: 1.4;
@@ -152,12 +161,84 @@ section h2 {
   transform: translateX(50%);
 }
 
+.popup-header h2 {
+  width: 70%;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.popup-field {
+  min-height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.popup-field label {
+  display: inline-block;
+  min-width: 100px;
+  min-height: 35px;
+  font-size: 18px;
+}
+
+.popup-field p {
+  min-width: 100px;
+  min-height: 35px;
+  font-size: 18px;
+}
+
+.popup-field input {
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: ridge;
+  outline: none;
+  margin-left: 10px;
+}
+
+.popup-field textarea {
+  margin-bottom: 10px;
+  height: 300px;
+  border-style: ridge;
+  outline: none;
+}
+
+.popup-button-row {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.popup-button-row p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.popup-button-row .button-popup {
+  width: 160px;
+  display: block;
+  color: black;
+  border: 3px solid;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+  line-height: 2.2;
+}
+
 .btn {
   width: 260px;
   display: block;
   color: black;
   border: 3px solid black;
   font-size: 21px;
+  font-style: italic;
   text-align: center;
   line-height: 2.2;
 }
@@ -169,6 +250,8 @@ section h2 {
 
 .btn[disabled] {
   opacity: 0.7;
+  color: white;
+  background: black;
 }
 
 .ring-row {
@@ -178,15 +261,47 @@ section h2 {
 
 .ring-row img {
   width: 350px;
+  margin-right: 32px;
 }
 
 .ring-row .ring-info {
   margin-left: 200px;
 }
 
+.overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay:before {
+  content: '';
+  opacity: 0.7;
+  background: #FFF9EA;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  position: absolute;
+}
+
+.popup-form {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 20;
+  position: absolute;
+  width: 900px;
+  padding: 30px;
+  background: white;
+}
+
 .ring-row h3 {
   font-size: 36px;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .ring-row p {
@@ -196,6 +311,45 @@ section h2 {
 
 .ring-row .btn {
   margin-top: 16px;
+}
+
+.wsh-header {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.wsh-avatar-row {
+  margin-top: 20px;
+}
+
+.wsh-tr {
+  display:block;
+  margin-bottom:20px
+}
+
+.wsh-tr td {
+  width: 25%;
+}
+
+.wsh-td-img {
+  width: 60%;
+}
+
+.wsh-span {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.wsh-title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 30px
+}
+
+.wsh-div-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  margin-bottom: 80px;
 }
 
 .home-background {
@@ -216,27 +370,27 @@ section h2 {
 }
 
 .home-title {
-    font-weight: 100;
-    width: 35%;
-    font-size: 35px;
-    left: 15%;
-    z-index: 9999999;
-    margin-top: -350px;
-    position: absolute;
+  font-weight: 100;
+  width: 35%;
+  font-size: 35px;
+  left: 15%;
+  z-index: 9999999;
+  margin-top: -350px;
+  position: absolute;
 }
 
 .home-button {
-    left: 20%;
-    z-index: 9999999;
-    margin-top: -180px;
-    position: absolute;
+  left: 20%;
+  z-index: 9999999;
+  margin-top: -180px;
+  position: absolute;
 }
 
 .home-subtitle {
-    font-weight: 100;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .home-text {
@@ -250,4 +404,35 @@ section h2 {
 .home-subpics {
   display: inline-block;
   margin: 20px;
+}
+
+.padded-section {
+  padding-bottom: 32px;
+}
+
+.form label {
+  display: block;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  padding-bottom: 32px;
+}
+
+.pure-checkbox, .pure-radio {
+  padding: 8px;
+}
+
+.summary {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary .price {
+  font-weight: 700;
 }
