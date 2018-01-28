@@ -16,15 +16,10 @@ import Forge from './components/forge'
 import Market from './components/market'
 import Header from './components/header'
 import Witness from './components/witness'
-import web3js from './web3';
-import Send from './components/send'
-import Payment from './components/payment'
 
 class App extends Component {
   render() {
     const history = createBrowserHistory()
-
-    web3js.eth.defaultAccount = web3js.eth.accounts[0]
 
     return (
       <Router history={history}>
@@ -33,8 +28,6 @@ class App extends Component {
           <main className="container">
             <Switch>
               <Route path="/mine" component={Mine} />
-              <Route path="/send" component={Send} />
-              <Route path="/payment" component={Payment} />
               <Route path="/forge" component={Forge} />
               <Route path="/market/:tab" component={Market} />
               <Route path="/sale/:id" component={Sale} />

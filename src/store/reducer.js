@@ -1,6 +1,8 @@
-import * as types from './constants';
+// import * as types from './constants';
 
-const initialState = {};
+const initialState = {
+  web3: {},
+};
 
 export default function (state = initialState, action) {
   switch (action.type) {
