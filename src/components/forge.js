@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { MATERIAL, FORGER } from '../store/constants'
 import Payment from './payment'
+import KittyMintingContract from '../../build/contracts/KittyMinting.json'
 import web3js from '../web3'
 
 class Forge extends Component {
@@ -26,18 +28,18 @@ class Forge extends Component {
 
   componentDidMount() {
     web3js.eth.defaultAccount = web3js.eth.accounts[0];
+    this.contract = web3js.eth.contract(KittyMintingContract.abi).at('0x75c35c980c0d37ef46df04d31a140b65503c0eed');
     this.syncEthInfo();
-    // TODO: setTimeout to check if watch succeed
-    // If not, prompt user to reopen browser
     web3js.eth.filter('latest').watch(this.syncEthInfo);
   }
-  
+
   syncEthInfo = () => {
     web3js.eth.getBalance(web3js.eth.coinbase, (e, balance) => this.setState({ balance }));
     web3js.version.getNetwork((e, network) => this.setState({ network }));
   };
 
   confirmPay() {
+    this.contract.createPromoKitty(1, web3js.eth.defaultAccount, { gas: 30000 }, () => { console.log(arguments) })
     this.toggleModal()
   }
 
@@ -141,4 +143,4 @@ class Forge extends Component {
   }
 }
 
-export default Forge
+export default connect(state => state)(Forge)
