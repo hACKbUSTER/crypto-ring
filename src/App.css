@@ -436,3 +436,11 @@ section h2 {
 .summary .price {
   font-weight: 700;
 }
+
+.network-status-normal {
+    margin: 20px;
+    width: 50%;
+    display: inline-block;
+    color: lightgreen;
+    font-family: Helvetica Neue;
+}

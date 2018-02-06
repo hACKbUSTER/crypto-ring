@@ -9,13 +9,13 @@ import web3js from '../web3'
 
 export default function(props) {
 
-	var MyContract = web3js.eth.contract(contractJson.abi);
-	// initiate contract for an address
-	var myContractInstance = MyContract.at('0x75c35c980c0d37ef46df04d31a140b65503c0eed');
+	// var MyContract = web3js.eth.contract(contractJson.abi);
+	// // initiate contract for an address
+	// var myContractInstance = MyContract.at('0x75c35c980c0d37ef46df04d31a140b65503c0eed');
 	
-	myContractInstance.createPromoKitty(1,web3js.eth.defaultAccount,{
-      gas: 220000,
-    }, () => console.log(arguments));
+	// myContractInstance.createPromoKitty(1,web3js.eth.defaultAccount,{
+ //      gas: 220000,
+ //    }, () => console.log(arguments));
 	// myContractInstance.methods.createPromoKitty(27363,web3js.eth.defaultAccount).send().then(function(receipt){
     // receipt can also be a new contract instance, when coming from a "contract.deploy({...}).send()"
 	// });

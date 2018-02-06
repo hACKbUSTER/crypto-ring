@@ -1,0 +1,286 @@
+{
+  "contractName": "GeneScienceInterface",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isGeneScience",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "genes1",
+          "type": "uint256"
+        },
+        {
+          "name": "genes2",
+          "type": "uint256"
+        }
+      ],
+      "name": "mixGenes",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.18;\n\n\n/// @title defined the interface that will be referenced in main Kitty contract\ncontract GeneScienceInterface {\n    /// @dev simply a boolean to indicate this is the contract we expect to be\n    function isGeneScience() public pure returns (bool);\n\n    /// @dev given genes of kitten 1 & 2, return a genetic combination - may have a random factor\n    /// @param genes1 genes of mom\n    /// @param genes2 genes of sire\n    /// @return the genes that are supposed to be passed down the child\n    function mixGenes(uint256 genes1, uint256 genes2) public returns (uint256);\n}\n",
+  "sourcePath": "/Users/sergiochan/Documents/百度工作文档/个人相关/crypto-ring/contracts/ExternalInterfaces/GeneScienceInterface.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/sergiochan/Documents/百度工作文档/个人相关/crypto-ring/contracts/ExternalInterfaces/GeneScienceInterface.sol",
+      "exportedSymbols": {
+        "GeneScienceInterface": [
+          1003
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 988,
+        "name": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": "@title defined the interface that will be referenced in main Kitty contract",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1003
+          ],
+          "name": "GeneScienceInterface",
+          "scope": 1004
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "constant": true,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "isGeneScience",
+              "payable": false,
+              "scope": 1003,
+              "stateMutability": "pure",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 989,
+                "name": "ParameterList",
+                "src": "244:2:5"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 993,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 990,
+                        "name": "ElementaryTypeName",
+                        "src": "268:4:5"
+                      }
+                    ],
+                    "id": 991,
+                    "name": "VariableDeclaration",
+                    "src": "268:4:5"
+                  }
+                ],
+                "id": 992,
+                "name": "ParameterList",
+                "src": "267:6:5"
+              }
+            ],
+            "id": 993,
+            "name": "FunctionDefinition",
+            "src": "222:52:5"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": false,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "mixGenes",
+              "payable": false,
+              "scope": 1003,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "genes1",
+                      "scope": 1002,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 994,
+                        "name": "ElementaryTypeName",
+                        "src": "539:7:5"
+                      }
+                    ],
+                    "id": 995,
+                    "name": "VariableDeclaration",
+                    "src": "539:14:5"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "genes2",
+                      "scope": 1002,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 996,
+                        "name": "ElementaryTypeName",
+                        "src": "555:7:5"
+                      }
+                    ],
+                    "id": 997,
+                    "name": "VariableDeclaration",
+                    "src": "555:14:5"
+                  }
+                ],
+                "id": 998,
+                "name": "ParameterList",
+                "src": "538:32:5"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 1002,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 999,
+                        "name": "ElementaryTypeName",
+                        "src": "587:7:5"
+                      }
+                    ],
+                    "id": 1000,
+                    "name": "VariableDeclaration",
+                    "src": "587:7:5"
+                  }
+                ],
+                "id": 1001,
+                "name": "ParameterList",
+                "src": "586:9:5"
+              }
+            ],
+            "id": 1002,
+            "name": "FunctionDefinition",
+            "src": "521:75:5"
+          }
+        ],
+        "id": 1003,
+        "name": "ContractDefinition",
+        "src": "107:491:5"
+      }
+    ],
+    "id": 1004,
+    "name": "SourceUnit",
+    "src": "0:599:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-27T21:30:46.290Z"
+}

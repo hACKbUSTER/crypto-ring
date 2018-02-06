@@ -1,4 +1,5 @@
 import React from 'react'
+import { networkName } from "../utils/getWeb3.js";
 
 export default function(props) {
   const routes = [
@@ -18,7 +19,10 @@ export default function(props) {
 
   return (
     <header>
+      <p>
       <a href='/'><h1 className="title with-border">crypto ring</h1></a>
+      <h4 className="network-status-normal"><div id="circle-green"></div>{networkName(props.network)}</h4>
+      </p>
       <nav className="menu">
         <ul>
           {routes.map((r, i) => {
