@@ -19,20 +19,23 @@ export default function(props) {
 	// myContractInstance.methods.createPromoKitty(27363,web3js.eth.defaultAccount).send().then(function(receipt){
     // receipt can also be a new contract instance, when coming from a "contract.deploy({...}).send()"
 	// });
+  //Declare to the world, we are made for each other
   return (
-    <div>
-      <img src={imgHome} className="home-pic" role="presentation">
-      </img>
-      <h1 className="home-title">Declare to the world, we are made for each other</h1>
-      <a href="/mine">
-        <button className="btn home-button">Start</button>
+    <div className="home-main">
+      <h1 className="home-title">CRYPTO RING</h1>
+      <h2 className="home-subtitle">Declare to the world, we are made for each other.</h2>
+      <div className="home-button-container">
+      <p className="home-button">
+      <a href="/#">
+      LEARN MORE
       </a>
-      <h2 className="home-subtitle">View Collection</h2>
-      <h3 className="home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
-      <img src={img1} role="presentation" className="home-subpics"/>
-      <img src={img2} role="presentation" className="home-subpics"/>
-      <img src={img3} role="presentation" className="home-subpics"/>
-      <img src={img4} role="presentation" className="home-subpics"/>
+      </p>
+      <p className="home-button">
+      <a href="/mine">
+      GET STARTED
+      </a>
+      </p>
+      </div>
     </div>
   )
 }

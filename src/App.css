@@ -8,11 +8,11 @@
 
 body,
 .pure-g [class*=pure-u] {
-  font-family: 'Noto Serif', sans-serif;
+  font-family: 'Novecentosanswide-Normal', sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: 'Noto Serif', 'Arial Narrow', sans-serif;
+  font-family: 'Novecentosanswide-Normal', 'Arial Narrow', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -30,8 +30,22 @@ code, pre {
 }
 
 header {
-  text-align: center;
-  background: #FAF8F7;
+/*  text-align: center;
+*/  
+  background: transparent;
+  width: 20%;
+  margin-left: 50px;
+}
+
+div .App {
+  padding-bottom: 100px;
+  min-height: 800px;
+  background: no-repeat fixed top;
+  filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
+  -moz-background-size:100% 100%;  
+  background-size:100% 100%;  
+  background-attachment: fixed;
+
 }
 
 .with-border {
@@ -55,7 +69,7 @@ header .menu {
 header .menu ul {
   width: 300px;
   margin: 0 auto;
-  display: flex;
+  display: inline-grid;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -67,12 +81,18 @@ header .menu ul li {
 }
 
 header .menu a {
-  color: #818181;
+  color: black;
   font-size: 16px;
 }
 
-header .menu .active a {
+header .menu a:hover{
   color: black;
+  text-decoration: underline;
+}
+
+header .menu .active a {
+  color: #584C57;
+  text-decoration: underline;
 }
 
 .container {
@@ -352,60 +372,6 @@ section h2 {
   margin-bottom: 80px;
 }
 
-.home-background {
-  height:500px;
-  width: 100vw;
-  margin-left: -25%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc200+15,ffffff+100&0+0,1+100 */
-  background: -moz-linear-gradient(45deg, rgba(255,194,0,0) 0%, rgba(255,194,0,0.15) 15%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, rgba(255,194,0,0) 0%,rgba(255,194,0,0.15) 15%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, rgba(255,194,0,0) 0%,rgba(255,194,0,0.15) 15%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-
-.home-pic {
-  height:500px;
-  width: 100vw;
-  margin-left: -25%;
-  position: relative;
-}
-
-.home-title {
-  font-weight: 100;
-  width: 35%;
-  font-size: 35px;
-  left: 15%;
-  z-index: 9999999;
-  margin-top: -350px;
-  position: absolute;
-}
-
-.home-button {
-  left: 20%;
-  z-index: 9999999;
-  margin-top: -180px;
-  position: absolute;
-}
-
-.home-subtitle {
-  font-weight: 100;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.home-text {
-  text-align: center;
-  font-weight: 100;
-  margin-bottom: 50px;
-  word-spacing: 5px;
-  color: darkslategrey;
-}
-
-.home-subpics {
-  display: inline-block;
-  margin: 20px;
-}
-
 .padded-section {
   padding-bottom: 32px;
 }
@@ -438,9 +404,9 @@ section h2 {
 }
 
 .network-status-normal {
-    margin: 20px;
-    width: 50%;
+    margin-top: 50px;
     display: inline-block;
     color: lightgreen;
-    font-family: Helvetica Neue;
+    font-family: 'Novecentosanswide-Normal';
+    font-weight: 100;
 }

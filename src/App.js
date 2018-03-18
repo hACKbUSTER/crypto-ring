@@ -9,14 +9,22 @@ import {
 import './css/noto-serif.css'
 import './css/pure-min.css'
 import './App.css'
+import './css/home.css'
+
 import Mine from './components/mine'
 import Home from './components/home'
 import Sale from './components/sale'
 import Forge from './components/forge'
 import Market from './components/market'
-import Header from './components/header'
+import Nav from './components/nav'
 import Witness from './components/witness'
 import web3js from './web3';
+import Background from './img/background.png';
+
+
+var sectionStyle = {
+  backgroundImage: "url("+Background+")"
+};
 
 class App extends Component {
   state = {
@@ -42,8 +50,8 @@ class App extends Component {
 
     return (
       <Router history={history}>
-        <div className="App">
-          <Header history={history} network={this.state.network} />
+        <div className="App" style={sectionStyle}>
+          <Nav history={history} network={this.state.network} />
           <main className="container">
             <Switch>
               <Route path="/mine" component={Mine} />

@@ -8,7 +8,7 @@ if (typeof web3 !== 'undefined') {
   web3Provider = window.web3.currentProvider;
 } else if (process.env.NODE_ENV === 'development') {
   // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-  web3Provider = new Web3.providers.HttpProvider("http://localhost:8545");
+  web3Provider = new Web3.providers.HttpProvider("http://localhost:7545");
 } else {
   console.error('No web3Instance? You should consider trying MetaMask!');
   throw new Error('Please install MetaMask');
