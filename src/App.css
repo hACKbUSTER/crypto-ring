@@ -37,9 +37,27 @@ header {
   margin-left: 50px;
 }
 
+footer{
+    width: 100%;
+    height: 300px; 
+    bottom:0px;
+    left:0px;
+    background: transparent;
+}
+
+footer p {
+  height: 20px;
+}
+
+.footer-note {
+    margin-left: 50px;
+    padding-top: 250px;
+    bottom: 0px;
+    color: black;
+}
+
 div .App {
-  padding-bottom: 100px;
-  min-height: 800px;
+  min-height: 850px;
   background: no-repeat fixed top;
   filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
   -moz-background-size:100% 100%;  
@@ -199,14 +217,16 @@ section h2 {
 
 .popup-field label {
   display: inline-block;
-  min-width: 100px;
-  min-height: 35px;
+  min-width: 250px;
+  min-height: 20px;
   font-size: 18px;
+  text-align: right;
+  margin-right: 20px;
 }
 
 .popup-field p {
   min-width: 100px;
-  min-height: 35px;
+  min-height: 20px;
   font-size: 18px;
 }
 
@@ -217,13 +237,20 @@ section h2 {
   border-bottom-style: ridge;
   outline: none;
   margin-left: 10px;
+  min-width: 300px;
 }
 
 .popup-field textarea {
   margin-bottom: 10px;
-  height: 300px;
-  border-style: ridge;
+  height: 200px;
+  border-style: dashed;
+  border-color: rgba(119,119,119,0.4);
   outline: none;
+  width: 80%;
+  resize: none;
+  overflow: visible;
+  margin-left: 10px;
+  padding: 10px;
 }
 
 .popup-button-row {
@@ -294,12 +321,13 @@ section h2 {
   right: 0;
   bottom: 0;
   position: fixed;
+  z-index: 999;
 }
 
 .overlay:before {
   content: '';
   opacity: 0.7;
-  background: #FFF9EA;
+  background: black;
   top: 0;
   left: 0;
   right: 0;
@@ -317,6 +345,12 @@ section h2 {
   width: 900px;
   padding: 30px;
   background: white;
+}
+
+.close-btn img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .ring-row h3 {
@@ -409,4 +443,27 @@ section h2 {
     color: lightgreen;
     font-family: 'Novecentosanswide-Normal';
     font-weight: 100;
+}
+
+.network-status-fail {
+    margin-top: 50px;
+    display: inline-block;
+    color: red;
+    font-family: 'Novecentosanswide-Normal';
+    font-weight: 100;
+}
+
+.address-floating {
+  font-weight: 100;
+    background-color: transparent;
+    position: fixed;
+    top: 30px;
+    color: black;
+    text-align: right;
+    right: 50px;
+}
+
+.address-floating-title {
+  font-weight: 100;
+    font-size: 20px;
 }

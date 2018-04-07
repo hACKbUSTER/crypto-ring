@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
+import Learnmore from './Learnmore'
 import { Provider } from 'react-redux'
 import { configureStore } from './store'
 // import getWeb3 from './utils/getWeb3';
@@ -26,5 +27,8 @@ const int = setInterval(() => {
       </Provider>,
       document.getElementById('root')
     );
+  } else {
+  	ReactDOM.render(<Learnmore/>, document.getElementById('root')
+  		);
   }
 }, 500);

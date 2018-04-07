@@ -17,10 +17,11 @@ import Sale from './components/sale'
 import Forge from './components/forge'
 import Market from './components/market'
 import Nav from './components/nav'
+import Footer from './components/footer'
 import Witness from './components/witness'
 import web3js from './web3';
 import Background from './img/background.png';
-
+import Address from './components/address'
 
 var sectionStyle = {
   backgroundImage: "url("+Background+")"
@@ -50,6 +51,7 @@ class App extends Component {
 
     return (
       <Router history={history}>
+      <div>
         <div className="App" style={sectionStyle}>
           <Nav history={history} network={this.state.network} />
           <main className="container">
@@ -62,10 +64,19 @@ class App extends Component {
               <Route path="/" exact component={Home} />
             </Switch>
           </main>
+          <Footer/>
+        </div>
         </div>
       </Router>
     );
   }
 }
 
+        // <Switch>
+        //       <Route path="/mine" component={Address} />
+        //       <Route path="/forge" component={Address} />
+        //       <Route path="/market/:tab" component={Address} />
+        //       <Route path="/sale/:id" component={Address} />
+        //       <Route path="/witness/:id" component={Address} />
+        // </Switch>
 export default App

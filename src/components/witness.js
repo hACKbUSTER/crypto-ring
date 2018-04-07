@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { RING } from '../store/constants'
 import Ring from './ring'
-import Address from './address'
 
 class Witness extends Component {
   constructor(props) {
@@ -18,7 +17,6 @@ class Witness extends Component {
   render() {
     return (
       <div>
-        <Address />
         <section>
           <h2>my ring</h2>
           <Ring ring={this.state.ring} useButton={false} />

@@ -19,7 +19,6 @@ class Mine extends Component {
   renderRingInfo() {
     return (
       <section>
-        <h2>my ring</h2>
         <Ring ring={this.state.ring} useButton={true} />
       </section>
     )
@@ -28,7 +27,6 @@ class Mine extends Component {
   renderNoRing() {
     return (
       <section className="ring-intro-section">
-        <h2>my ring</h2>
         <p>
           You don’t have any rings for now.<br />
           You can either forge a new one, or find your meant-to-be masterpiece in your life.
@@ -45,7 +43,6 @@ class Mine extends Component {
   render() {
     return (
       <div>
-        <Address />
         {this.state.hasRing ? this.renderRingInfo() : this.renderNoRing()}
       </div>
     )

@@ -1,9 +1,10 @@
 import React from 'react'
+import close from '../img/close.png'
 
 export default function(props) {
   return (
     <div className="popup-form">
-      <dev className="close-btn" onClick={props.toggleModal}>X</dev>
+      <dev className="close-btn" onClick={props.toggleModal}><img src={close}/></dev>
       <section className="popup-header">
         <h2 className="popup-title with-border">to the one</h2>
       </section>
@@ -18,11 +19,13 @@ export default function(props) {
             <input type="text" className="pure-input" value={props.to} onChange={props.onChange.bind(this, 'to')} />
           </div>
           <div className="popup-field">
-            <p>Note:</p>
+            <label>Note:</label>
             <textarea value={props.note} className="pure-input" onChange={props.onChange.bind(this, 'note')} placeholder="Your word to your lover."></textarea>
           </div>
           <div className="popup-field">
-            <label>Your lover's email address:</label>
+            <label>
+            Your lover''s email address:
+            </label>
             <input className="pure-input" type="text" placeholder="someluckylover@domain.com" value={props.email} onChange={props.onChange.bind(this, 'email')} />
           </div>
           <div className="popup-button-row">

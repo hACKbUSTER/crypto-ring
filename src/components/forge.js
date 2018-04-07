@@ -79,9 +79,6 @@ class Forge extends Component {
         <section className="with-border padded-section">
           <h2>your address</h2>
           <div className="avatar-row">
-            <div className="avatar">
-              <img alt="avatar" src="https://s3.amazonaws.com/cdn-live.sketch.cloud/default_avatars/m/2.png" />
-            </div>
             <pre className="address highlight">{web3js.eth.defaultAccount}</pre>
             <h2>You've got {web3js.fromWei(this.state.balance, 'ether').toString()} ETH</h2>
           </div>

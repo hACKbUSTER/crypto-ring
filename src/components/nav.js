@@ -21,10 +21,16 @@ export default function(props) {
     }
   ];
 
+  const getNetworkColor = network => {
+    console.log(network);
+    if(network === 0) { return <h4 className="network-status-fail">{networkName(props.network)}</h4>; }
+    else { return <h4 className="network-status-normal">{networkName(props.network)}</h4>; }
+  }
+
   return (
     <header>
       <p>
-      <h4 className="network-status-normal">{networkName(props.network)}</h4>
+      {getNetworkColor(props.network)}
       </p>
       <nav className="menu">
         <ul>

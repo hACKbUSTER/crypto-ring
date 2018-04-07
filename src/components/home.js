@@ -1,11 +1,5 @@
 import React from 'react'
-import imgHome from '../img/luxury.png'
-import img1 from '../img/pic1.png'
-import img2 from '../img/pic2.png'
-import img3 from '../img/pic3.png'
-import img4 from '../img/pic4.png'
 import contractJson from '../../build/contracts/KittyMinting.json';
-import web3js from '../web3'
 
 export default function(props) {
 

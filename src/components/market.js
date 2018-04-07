@@ -1,5 +1,4 @@
 import React from 'react'
-import Address from './address'
 import img1 from '../img/pic1.png'
 import img2 from '../img/pic2.png'
 import img3 from '../img/pic3.png'
@@ -11,7 +10,6 @@ export default function (props) {
   }
   return (
     <div class="wsh-container">
-      <Address />
       <div className="wsh-title">
         <span>FOR SALE · </span>
         <span className="wsh-span">WITNESS </span>

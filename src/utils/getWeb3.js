@@ -17,6 +17,6 @@ if (typeof web3 !== 'undefined') {
 const web3js = new Web3(web3Provider);
 
 export const etherFromWei = num => Web3.fromWei(num, 'ether').toString();
-export const networkName = num => {if(num == 1) return 'Main Etherum network connection ok'; else return 'Test network connection ok';};
+export const networkName = num => {if(num == 1) return 'Main Etherum network connection ok'; else if (num==0) return 'Network connection failed'; else return 'Test network connection ok';};
 
 export default web3js;

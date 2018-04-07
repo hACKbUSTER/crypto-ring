@@ -17,11 +17,16 @@ export default function(props) {
     }
   ];
 
+  const getNetworkColor = network => {
+    Console.log(network);
+  if(network === 0) { return <h4 className="network-status-fail"><div id="circle-green"></div>{networkName(props.network)}</h4>; }
+  else { return <h4 className="network-status-normal"><div id="circle-green"></div>{networkName(props.network)}</h4>; }
+}
   return (
     <header>
       <p>
       <a href='/'><h1 className="title with-border">crypto ring</h1></a>
-      <h4 className="network-status-normal"><div id="circle-green"></div>{networkName(props.network)}</h4>
+      {getNetworkColor(props.network)}
       </p>
       <nav className="menu">
         <ul>
